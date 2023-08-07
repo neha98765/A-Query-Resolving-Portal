@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Poppins:wght@300;400&family=Roboto:wght@300&display=swap');
+
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E9E9E9;
+    height: 100vh;
+}
+
+
+/* The Navbar  */
+nav{
+    background-color: #2A2D34;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+}
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 12px;
+}
+.logo{
+    user-select: none;
+}
+.nav-content .menu-items a{
+    font-size: 14.7px;
+}
+.menu-items a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px;
+    margin-left: 5px;
+    user-select: none;
+}
+.nav-content .right-content .profile-pic img{
+    width: 100%;
+    border-radius: 50%;
+
+}
+.right-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-content .ml{
+    margin-left: 15px;
+}
+.right-content .ask-question{
+    margin-left: 20px;
+}
+.right-content .right-buttons .ask-btn,.signup-btn{
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 8px;
+    background-color: #009DDC;
+    color:#fff;
+    font-weight: 400;
+}
+.right-content .right-buttons .login-btn{
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px 8px;
+    background-color: rgb(225, 236, 244);
+    color:rgb(57, 115, 157);
+    font-weight: 400;
+    margin-right: 6px;
+}
+
+.bell-icon{
+    margin-top: 9px;
+    margin-left: 15px;
+    cursor: pointer;
+    position: relative;
+    user-select:none;
+}
+.bell-icon i{
+    font-size: 1.5rem;
+}
+.bell-icon .badge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: #fff;
+    /* padding: 2px; */
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: -7px;
+    right: -4px;
+    border-radius: 50%;
+    
+}
+.bell-icon .badge span{
+    font-size: 0.7rem;
+}
+.profile-pic{
+    display: flex;
+    position: relative;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    padding: 1px;
+    border: 2px solid #009B72;
+}
+.profile-pic .dropdown-list{
+    min-width: 150px;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    border-radius: 6px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+    color: black;
+    visibility: hidden;
+}
+.profile-pic .dropdown-list[data-visible="true"]{
+    opacity: 1;
+    visibility: visible;
+}
+.profile-pic .dropdown-list i{
+    float: right;
+    transform: rotate(180deg);
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    color: #fff;
+}
+.dropdown-list-item{
+    padding: 0.5rem 1.3rem;
+}
+.dropdown-list-item a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* sidebar pop right icon */
+.nav-content .menu-bar{ 
+    cursor: pointer;
+    display: none;
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 850px) {
+    .nav-content .menu-bar{
+        display: block;
+    }
+    .nav-content .ask-question{
+        display: none;
+    }
+    .nav-content .menu-items{
+        display: none;
+    }
+    .logo{
+        font-size: 1.2rem;
+    }
+    .bell-icon i{
+        font-size: 1.4rem;
+    }
+    .profile-pic{
+        width: 32px;
+        height: 32px;
+    }
+    .questions-container{
+        margin:0;
+    }
+}

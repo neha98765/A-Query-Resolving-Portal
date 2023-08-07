@@ -1,0 +1,65 @@
+.askuser-container{
+    display: grid;
+    /* justify-content: flex-start;
+    flex-wrap: wrap; */
+    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+    margin-left: 15.7rem;
+    margin-right: 10px;
+    margin-top: 10px;
+    gap: 10px;
+    padding: 1em;
+}
+.student_item{
+    font-size: 0.8rem;
+    color: rgba(0,0,0,.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.stud_info{
+    display: flex;
+    align-items: center;
+}
+.stud_info img{
+    margin-top: 5px;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(45, 111, 247);
+    padding: 2px;
+}
+.student_item .stud_info .name_badge .author_badge{
+    text-align: center;
+    padding: 2px 6px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    font-size: 0.7rem;
+}
+.student_item button{
+    cursor: pointer;
+    width: 100%;
+    background-color: rgb(10, 149, 255);
+    border: none;
+    margin-top: 15px;
+    color: #fff;
+    border-radius: 5px;
+}
+.student_item button:active{
+    background-color: rgb(50, 159, 241);
+}
+
+
+
+
+
+@media only screen and (max-width: 850px) {
+    .askuser-container{
+        margin-left: 10px;
+    }
+}

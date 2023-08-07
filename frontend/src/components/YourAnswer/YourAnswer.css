@@ -1,0 +1,21 @@
+.user-questions-container{
+    margin-left: 15rem;
+    padding: 1em;
+}
+.user-questions-container .no_answered_qstn{
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(40, 40, 41);
+}
+
+
+.desc-dark {
+    color: #dcdcdc!important;
+}
+
+@media only screen and (max-width: 850px) {
+    .user-questions-container{
+        margin-left: 0;
+    }
+
+}
